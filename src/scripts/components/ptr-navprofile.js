@@ -10,7 +10,6 @@ class PtrNavProfile extends HTMLElement {
 
     set data(value) {
         this._data = value;
-        console.log(value);
         const url = UrlParser.parseActiveUrlWithoutCombiner();
         url.id === CONFIG.USERNAME ? this.renderOwner() : this.renderGuest();
     }

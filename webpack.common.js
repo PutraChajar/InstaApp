@@ -9,8 +9,6 @@ module.exports = {
     signin: path.resolve(__dirname, 'src/scripts/signin.js'),
     signup: path.resolve(__dirname, 'src/scripts/signup.js'),
     main: path.resolve(__dirname, 'src/scripts/main.js'),
-    cordova: path.resolve(__dirname, 'src/scripts/cordova.js'),
-    cordova_plugins: path.resolve(__dirname, 'src/scripts/cordova_plugins.js'),
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -61,7 +59,7 @@ module.exports = {
 			favicon: "./src/public/images/favicon.ico",
       filename: 'index.html',
       title: 'InstaApp',
-      chunks: ['index','cordova','cordova_plugins'],
+      chunks: ['index'],
     }),
     new HtmlWebpackPlugin({
 			template: path.resolve(__dirname, 'src/templates/signin.html'),
@@ -82,7 +80,7 @@ module.exports = {
 			favicon: "./src/public/images/favicon.ico",
       filename: 'main.html',
       title: 'InstaApp',
-      chunks: ['main','cordova','cordova_plugins'],
+      chunks: ['main'],
     }),
     new CopyWebpackPlugin({
       patterns: [
