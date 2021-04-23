@@ -21,6 +21,7 @@ const PostInitiator = {
                         if (data.status === 'success') {
                             const svg = this.children[0];
                             svg.classList.add('filled','red');
+                            this.setAttribute('liked', 1);
                         } else {
                             Alert.show('info', data.message);
                         }
@@ -33,6 +34,7 @@ const PostInitiator = {
                         if (data.status === 'success') {
                             const svg = this.children[0];
                             svg.classList.remove('filled','red');
+                            this.setAttribute('liked', 0);
                         } else {
                             Alert.show('info', data.message);
                         }
