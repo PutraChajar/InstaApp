@@ -1,0 +1,15 @@
+.postprofile {
+    margin-top: 20px;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(min-content, max-content);
+    gap: 5px;
+    position: relative;
+}
+
+.postprofile::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    background: transparent;
+}

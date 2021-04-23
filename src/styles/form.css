@@ -1,0 +1,52 @@
+.form-group {
+    margin: 20px 10px;
+}
+
+.form-group-header {
+    display: flex;
+    align-items: center;
+}
+
+.form-group-body {
+    display: flex;
+}
+
+.form-group label {
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.form-group input {
+    font-family: Nunito, sans-serif;
+    font-size: 1em;
+    color: #2d3436;
+    height: 32px;
+}
+
+.form-group input.uppercase {
+    text-transform: uppercase;
+}
+
+.form-group textarea {
+    font-family: Nunito, sans-serif;
+    font-size: 1em;
+    color: #2d3436;
+    resize: none;
+    margin-bottom: 40px;
+}
+
+.form-group select {
+    height: 32px;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+
+.form-control:focus {
+    outline: 0;
+    border-bottom: 2px solid #2d3436;
+}

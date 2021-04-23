@@ -1,0 +1,19 @@
+.group-float {
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.group-float button:first-child {
+    border-radius: 5px 0 0 5px;
+}
+
+.group-float button:last-child {
+    border-radius: 0 5px 5px 0;
+}

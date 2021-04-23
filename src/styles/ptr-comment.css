@@ -1,0 +1,16 @@
+.comment_item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.comment_item img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.comment_item p {
+    font-size: 0.8em;
+}

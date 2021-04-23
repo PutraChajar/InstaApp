@@ -1,0 +1,37 @@
+.feather {
+    width: 24px;
+    height: 24px;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+}
+
+.feather.filled {
+    fill: currentColor;
+}
+
+.feather.filled.white {
+    stroke: #fff;
+    fill: #fff;
+}
+
+.feather.filled.red {
+    stroke: #e74c3c;
+    fill: #e74c3c;
+}
+
+.feather.mini {
+    width: 20px;
+    height: 20px;
+}
+
+.feather.large {
+    width: 32px;
+    height: 32px;
+}
+
+.feather.white {
+    stroke: #fff;
+}

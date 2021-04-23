@@ -1,0 +1,67 @@
+.suggestion {
+    margin: 20px 0;
+}
+
+.suggestion .title {
+    font-weight: bold;
+    font-size: 0.9em;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.suggestion .list {
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    display: flex;
+    overflow-x: auto;
+}
+
+.suggestion .list::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    background: transparent;
+}
+
+.suggestion .list .item {
+    border: 1px solid #000;
+    border-radius: 20px;
+    min-width: 150px;
+    margin-right: 20px;
+}
+
+.suggestion .list .item .photo {
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.suggestion .list .item .photo img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.suggestion .list .item .name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.suggestion .list .item .name p {
+    font-weight: bold;
+}
+
+.suggestion .list .item .follow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}

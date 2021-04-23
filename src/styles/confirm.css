@@ -1,0 +1,51 @@
+.confirms {
+    width: 300px;
+    height: 200px;
+    margin: 50px auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 3;
+    animation: fadeInOpacity 0.25s ease-in 0s 1, showSlide 0.25s ease-in 0s 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 600px) {
+    .confirms {
+        width: 80%;
+    }
+}
+
+.confirms.hilang {
+    animation: fadeOutOpacity 0.25s ease-in 0s 1, hideSlide 0.25s ease-in 0s 1;
+    opacity: 0;
+}
+
+.confirms .confirms_header {
+    flex: 2;
+}
+
+.confirms .confirms_header .confirms_icon {
+    text-align: center;
+    color: #3498db;
+    margin: 20px 0px;
+}
+
+.confirms .confirms_header .confirms_text {
+    text-align: center;
+    font-size: 14px;
+}
+
+.confirms .confirms_footer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

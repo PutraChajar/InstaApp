@@ -1,0 +1,15 @@
+.storyprofile {
+    margin-top: 120px;
+    background-color: #fff;
+    padding: 0 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+}
+
+.storyprofile::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    background: transparent;
+}

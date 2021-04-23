@@ -1,0 +1,93 @@
+@import 'form.css';
+@import 'button.css';
+@import 'anchor.css';
+@import 'modal.css';
+@import 'avatar.css';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url(../public/fonts/Nunito-Regular.ttf);
+}
+
+body {
+    background-color: #fff;
+    color: #2d3436;
+    font-family: Nunito, sans-serif;
+    display: flex;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+.container .signin {
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.container .signin .logo {
+    width: 200px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.container .signin .form_signin {
+    width: 100%;
+}
+
+.container .signin .form_signin .message {
+    text-align: center;
+}
+
+.container .signin .form_signin button {
+    margin: 20px 0 10px 0;
+}
+
+.container .signup {
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .signup .form_signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .signup .form_signup p {
+    margin-right: 5px;
+}
+
+.container .signup .form_signup a {
+    font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 400px;
+    }
+}

@@ -1,0 +1,99 @@
+@import 'feather.css';
+
+.navprofile {
+    background-color: #fff;
+    border-radius: 0 0 20px 20px;
+    height: 130px;
+    position: fixed;
+	top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    transition: all 0.5s;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+}
+
+.navprofile .navbar {
+    height: 70px;
+    background-color: #fff;
+    padding: 0 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navprofile .navbar .logo {
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.navprofile .navbar .menu_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.navprofile .story {
+    height: 100%;
+    background-color: #fff;
+    padding: 0 20px;
+    box-sizing: border-box;
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+}
+
+.navprofile .story::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    background: transparent;
+}
+
+.navprofile .story .story_item {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.navprofile .story .story_item .story_circ {
+    border: 1px solid #000;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navprofile .story .story_item .story_circ img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.navprofile .story .story_item .story_name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.navprofile .story .story_item .story_name p {
+    font-size: 0.7em;
+}
+
+.navprofile .profile {
+    border: 1px solid #000;
+    height: 100%;
+    background-color: #fff;
+    padding: 0 20px;
+    box-sizing: border-box;
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    align-items: center;
+}
