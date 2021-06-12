@@ -9,6 +9,8 @@ module.exports = {
     signin: path.resolve(__dirname, 'src/scripts/signin.js'),
     signup: path.resolve(__dirname, 'src/scripts/signup.js'),
     main: path.resolve(__dirname, 'src/scripts/main.js'),
+    cordova: path.resolve(__dirname, 'src/scripts/cordova.js'),
+    cordova_plugins: path.resolve(__dirname, 'src/scripts/cordova_plugins.js'),
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -59,28 +61,28 @@ module.exports = {
 			favicon: "./src/public/images/favicon.ico",
       filename: 'index.html',
       title: 'InstaApp',
-      chunks: ['index'],
+      chunks: ['index','cordova','cordova_plugins'],
     }),
     new HtmlWebpackPlugin({
 			template: path.resolve(__dirname, 'src/templates/signin.html'),
 			favicon: "./src/public/images/favicon.ico",
       filename: 'signin.html',
       title: 'InstaApp',
-      chunks: ['signin'],
+      chunks: ['signin','cordova','cordova_plugins'],
     }),
     new HtmlWebpackPlugin({
 			template: path.resolve(__dirname, 'src/templates/signup.html'),
 			favicon: "./src/public/images/favicon.ico",
       filename: 'signup.html',
       title: 'InstaApp',
-      chunks: ['signup'],
+      chunks: ['signup','cordova','cordova_plugins'],
     }),
     new HtmlWebpackPlugin({
 			template: path.resolve(__dirname, 'src/templates/main.html'),
 			favicon: "./src/public/images/favicon.ico",
       filename: 'main.html',
       title: 'InstaApp',
-      chunks: ['main'],
+      chunks: ['main','cordova','cordova_plugins'],
     }),
     new CopyWebpackPlugin({
       patterns: [

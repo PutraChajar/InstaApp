@@ -3,6 +3,7 @@ import '../styles/signin.css';
 import img from '../public/images/instaapp.png';
 import DataSource from './data/data-source.js';
 import SessionIdb from './data/session-idb.js';
+import './utils/cordova-initiator';
 
 var logo = document.querySelector('#logo');
 const username = document.querySelector('#username');

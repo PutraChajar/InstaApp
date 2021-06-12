@@ -16,6 +16,7 @@
 @import 'ptr-lovers.css';
 @import 'ptr-suggestion.css';
 @import 'ptr-nopost.css';
+@import 'confirm.css';
 
 * {
     margin: 0;

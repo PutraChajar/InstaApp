@@ -6,6 +6,7 @@ import './components/ptr-menu';
 import "font-awesome/css/font-awesome.css";
 import App from './views/app';
 import SessionIdb from './data/session-idb';
+import './utils/cordova-initiator';
 
 const app = new App({
     content: document.querySelector('#content')
